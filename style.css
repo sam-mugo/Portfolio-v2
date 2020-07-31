@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+header {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(124,56,170);
+    background: linear-gradient(90deg, rgba(124,56,170,1) 19%, rgba(114,69,252,1) 93%);
+    display: flex;
+    flex-direction: column;
+}
+#particles-js {
+    
+}
+nav {
+    opacity: 1;
+    padding-top: 30px;
+    position: absolute;
+    z-index: ;
+    width: 100vw;
+}
+.nav-items {
+    display: flex;
+    justify-content: space-evenly;
+    
+    list-style: none;
+    color: cornsilk;
+    z-index: 1;
+}
+.nav-link:hover {
+    border-bottom: coral 5px solid;
+    cursor: pointer;
+}
+.intro {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 100vw;
+    text-align: center;
+   
+  
+}
+h1 {
+    color: coral;
+    margin-bottom: 30px;
+}
+h2 {
+    font-size: 40px;
+    color: #9e9ef7;
+    
+       
+}
+#name {
+    border: 15px dashed;
+    border-color: lightseagreen;
+    
+}
+.intro-position {
+    font-family: "lora-regular", serif;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+.intro-position span:first-child::before {
+    content: "|";
+    display: inline-block;
+    color: coral;
+}
+.intro-position span:first-child::after {
+    content: "|";
+    text-align: center;
+    display: inline-block;
+    color: coral;
+}
+.intro-position span:last-child::after {
+    content: "|";
+    text-align: center;
+    display: inline-block;
+    color: coral;
+
+}
+@media screen and (max-width: 865px) {
+    h2 {
+        font-size: 30px;
+    }
+    #name {
+        border: 10px dashed;
+        border-color: lightseagreen;
+    }
+}
+@media screen and (max-width: 595px) {
+    h2 {
+        font-size: 20px;
+    }
+    .intro-position {
+        display: flex;
+        flex-direction: column;
+    }
+    .intro-position span:last-child::before {
+        content: "|";
+        color: coral;
+    }
+}
+@media screen and (max-width: 380px) {
+   h2 {
+       font-size: 32px;
+       text-align: center;
+   }
+   h1 {
+       text-align: center;
+       font-size: 25px;
+   }
+   .intro-position {
+    display: flex;
+    flex-direction: column;
+    }
+    .intro-position span:last-child::before {
+        content: "|";
+        color: coral;
+    }
+   
+}
+@media screen and (max-width: 330px) {
+    .intro-position {
+        font-size: 1.2em;
+    }
+}
